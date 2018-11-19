@@ -1,0 +1,9 @@
+M=dlmread('M.txt');
+B=dlmread('B.txt');
+p=dlmread('p.txt');
+v=dlmread('v.txt');
+alpha=alpha_dynamic(M,p,B,v)
+beta=beta_dynamic(M,p,B,v);
+gamma=gamma_dynamic(alpha,beta);
+ansbeta=beta(3,18)
+ansgamma=gamma(5,10)
